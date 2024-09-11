@@ -133,56 +133,71 @@ if (Name !== "adel" && isGoodBehaved && billValue > 200) {
   result = `Food is not free for ${Name}`;
 }
 console.log(result);
+
+class train 3 => trafic light
+const trafficLightColor = "red";
+if (trafficLightColor === red) {
+  console.log(`stop`);
+} else if (trafficLightColor === yellow) {
+  console.log(`slow down`);
+} else if (trafficLightColor === green) {
+  console.log(`Go`);
+} else {
+  console.log(`ivalid color`);
+}
+class train 4 => age verification
+const age = 18;
+if (age >= 18) {
+  console.log(`you are an adult`);
+} else if (13 <= age < 18) {
+  console.log(`you are a teenager`);
+} else if (age < 13) {
+  console.log(`you are a child`);
+}
+class train 5 => covert score
+const score = 100;
+let result;
+if (90 <= score <= 100) {
+  result = "A+";
+} else if (80 <= score <= 89) {
+  result = "A";
+} else if (70 <= score <= 79) {
+  result = "B+";
+} else if (60 <= score <= 69) {
+  result = "B";
+} else if (50 <= score <= 59) {
+  result = "C";
+} else if (score < 50) {
+  result = "D";
+}
+console.log(result);
+class train 6 => BMI
+const weight = 90;
+const height = 1.9;
+const bmi = weight * height ** 2;
+let result;
+if (bmi < 18.5) {
+  result = `Underweight`;
+} else if (18.5 <= bmi < 25) {
+  result = `normal weight`;
+} else if (25 <= bmi < 30) {
+  result = `overweight`;
+} else if (30 < bmi) {
+  result = `Obese`;
+}
+console.log(result);
+
+// class train 6
+function calculateDiscount(amount, discount) {
+  return amount - amount * discount;
+}
+const finallAmount = calculateDiscount(200, 0.2);
+console.log(finallAmount);
+const calculateDiscount = function (amount, discount) {
+  return amount - amount * discount;
+};
+console.log(calculateDiscount(100, 0.2));
+
+const calculateDiscount = (amount, discount) => amount - amount * discount;
+console.log(calculateDiscount(100, 0.2));
 */
-// class train 3 => trafic light
-// const trafficLightColor = "red";
-// if (trafficLightColor === red) {
-//   console.log(`stop`);
-// } else if (trafficLightColor === yellow) {
-//   console.log(`slow down`);
-// } else if (trafficLightColor === green) {
-//   console.log(`Go`);
-// } else {
-//   console.log(`ivalid color`);
-// }
-// class train 4 => age verification
-// const age = 18;
-// if (age >= 18) {
-//   console.log(`you are an adult`);
-// } else if (13 <= age < 18) {
-//   console.log(`you are a teenager`);
-// } else if (age < 13) {
-//   console.log(`you are a child`);
-// }
-// class train 5 => covert score
-// const score = 100;
-// let result;
-// if (90 <= score <= 100) {
-//   result = "A+";
-// } else if (80 <= score <= 89) {
-//   result = "A";
-// } else if (70 <= score <= 79) {
-//   result = "B+";
-// } else if (60 <= score <= 69) {
-//   result = "B";
-// } else if (50 <= score <= 59) {
-//   result = "C";
-// } else if (score < 50) {
-//   result = "D";
-// }
-// console.log(result);
-// class train 6 => BMI
-// const weight = 90;
-// const height = 1.9;
-// const bmi = weight * height ** 2;
-// let result;
-// if (bmi < 18.5) {
-//   result = `Underweight`;
-// } else if (18.5 <= bmi < 25) {
-//   result = `normal weight`;
-// } else if (25 <= bmi < 30) {
-//   result = `overweight`;
-// } else if (30 < bmi) {
-//   result = `Obese`;
-// }
-// console.log(result);
