@@ -155,37 +155,38 @@ if (age >= 18) {
   console.log(`you are a child`);
 }
 class train 5 => covert score
-const score = 100;
+const score = 60;
 let result;
-if (90 <= score <= 100) {
+if (100 >= score >= 90) {
   result = "A+";
-} else if (80 <= score <= 89) {
+} else if (89 >= score && score >= 80) {
   result = "A";
-} else if (70 <= score <= 79) {
+} else if (79 >= score && score >= 70) {
   result = "B+";
-} else if (60 <= score <= 69) {
+} else if (69 >= score && score >= 60) {
   result = "B";
-} else if (50 <= score <= 59) {
+} else if (59 >= score && score >= 50) {
   result = "C";
 } else if (score < 50) {
   result = "D";
 }
 console.log(result);
 class train 6 => BMI
-const weight = 90;
-const height = 1.9;
-const bmi = weight * height ** 2;
+const weight = 120;
+const height = 2;
+const bmi = weight / height ** 2;
 let result;
 if (bmi < 18.5) {
   result = `Underweight`;
-} else if (18.5 <= bmi < 25) {
+} else if (18.5 <= bmi && bmi < 25) {
   result = `normal weight`;
-} else if (25 <= bmi < 30) {
+} else if (25 <= bmi && bmi < 30) {
   result = `overweight`;
-} else if (30 < bmi) {
+} else if (30 <= bmi) {
   result = `Obese`;
 }
 console.log(result);
+
 
 // class train 6
 function calculateDiscount(amount, discount) {
@@ -200,4 +201,20 @@ console.log(calculateDiscount(100, 0.2));
 
 const calculateDiscount = (amount, discount) => amount - amount * discount;
 console.log(calculateDiscount(100, 0.2));
+
+const users = [
+  "shiva",
+  "hossein",
+  "sina",
+  "ali",
+  "nerges",
+  "shayan",
+  "negin",
+  "saeed",
+];
+users.shift();
+users.shift();
+users.pop();
+users.push(users.length);
+console.log(users);
 */
