@@ -217,4 +217,29 @@ users.shift();
 users.pop();
 users.push(users.length);
 console.log(users);
+
+// class train 7
+const calcAre = function (length, width) {
+  return length * width;
+};
+console.log(calcAre(2, 3));
+
+// class train 8
+//  (1.8 × C) + 32
+const celsiusToFahrenheit = function (celsius) {
+  return 1.8 * celsius + 32;
+};
+console.log(celsiusToFahrenheit(110));
+
+// class train 9
+const testArray = ["value1", "value2", "value3", "value4"];
+const testValue = "value";
+const containsValue = function (Array, value) {
+  if (Array.indexOf("value")) {
+    return "yes";
+  } else {
+    return "no";
+  }
+};
+console.log(containsValue(testArray, testValue));
 */
