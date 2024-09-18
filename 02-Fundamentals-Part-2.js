@@ -82,4 +82,33 @@ const john = {
     return this.bmi;
   },
 };
+
+//Coding Challenge #4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+function calcTip(bills) {
+  if (bills >= 50 && bills <= 300) {
+    tips.push(bills * 0.15);
+    totals.push(bills * 0.15 + bills);
+  } else {
+    tips.push(bills * 0.2);
+    totals.push(bills * 0.2 + bills);
+  }
+}
+for (let i = 0; i < bills.length; i++) {
+  calcTip(bills[i]);
+}
+console.log(tips);
+console.log(totals);
+//Coding Challenge #5
+const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let avg = 0;
+function calcavg(array) {
+  avg = array / numb.length + avg;
+}
+for (let i = 0; i < numb.length; i++) {
+  calcavg(numb[i]);
+}
+console.log(avg);
 */

@@ -242,4 +242,51 @@ const containsValue = function (Array, value) {
   }
 };
 console.log(containsValue(testArray, testValue));
+
+const supra = {
+  brand: "toyota",
+  model: "supra mk4 twin turbo 2jz ",
+  year: "1993-2002",
+  color: "grey",
+  showDescription: function () {
+    return `${this.brand} ${this.model} ${this.year} ${this.color}`;
+  },
+};
+function showSupra(ObjectName) {
+  return `${ObjectName.brand} ${ObjectName.model} ${ObjectName.year} ${ObjectName.color}`;
+}
+console.log(supra.showDescription());
+
+console.log(showSupra(supra));
+
+const divisibleBy3 = [];
+const divisibleBy5 = [];
+const divisibleBy3And5 = [];
+for (let i = 1; i <= 45; i++) {
+  if (i % 3 === 0) {
+    divisibleBy3.push(i);
+  }
+  if (i % 5 === 0) {
+    divisibleBy5.push(i);
+  }
+  if (i % 3 === 0 && i % 5 === 0) {
+    divisibleBy3And5.push(i);
+  }
+}
+
+console.log(divisibleBy3);
+console.log(divisibleBy5);
+console.log(divisibleBy3And5);
+
+const numbersArray = [1, 13, 22, 12, 49];
+let sum = 0;
+for (let i = 0; i < numbersArray.length; i++) {
+  sum += numbersArray[i];
+}
+console.log(sum);
+
+const array = [1, 2, 3, 4, 5];
+for (i = array.length - 1; i > -1; i--) {
+  console.log(array[i]);
+}
 */
