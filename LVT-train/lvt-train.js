@@ -290,3 +290,12 @@ for (i = array.length - 1; i > -1; i--) {
   console.log(array[i]);
 }
 */
+const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let avg = 0;
+function calcavg(array) {
+  avg = array / numb.length + avg;
+}
+for (let i = 0; i < numb.length; i++) {
+  calcavg(numb[i]);
+}
+console.log(avg);
