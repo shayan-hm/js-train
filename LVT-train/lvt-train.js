@@ -289,7 +289,7 @@ const array = [1, 2, 3, 4, 5];
 for (i = array.length - 1; i > -1; i--) {
   console.log(array[i]);
 }
-*/
+
 const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let avg = 0;
 function calcavg(array) {
@@ -299,3 +299,38 @@ for (let i = 0; i < numb.length; i++) {
   calcavg(numb[i]);
 }
 console.log(avg);
+
+const arraySlice = function (array, startIndex, endIndex) {
+  return array.slice(startIndex, endIndex);
+};
+const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(arraySlice(testArray, 3, 5));
+
+const numbers = [25, -5, -4, -3, -2, -1, 0, 69, -36, 9, 63, -12, 5];
+
+const removeNegativeNumber = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < 0) {
+      array.splice(i, 1);
+      i = i - 1;
+    }
+  }
+  return array;
+};
+console.log(removeNegativeNumber(numbers));
+*/
+const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const result = [];
+testArray.forEach(function (element) {
+  if (element > 0 && element % 2 === 0) {
+    result.push(Math.sqrt(element));
+  } else if (element > 0 && element % 2 !== 0) {
+    result.push(element * 2);
+  } else if (element < 0 && element % 2 === 0) {
+    result.push(element ** 2);
+  } else if (element < 0 && element % 2 !== 0) {
+    result.push(Math.sin(element));
+  }
+});
+
+console.log(result);
