@@ -318,7 +318,7 @@ const removeNegativeNumber = function (array) {
   return array;
 };
 console.log(removeNegativeNumber(numbers));
-*/
+
 const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const result = [];
 testArray.forEach(function (element) {
@@ -334,3 +334,4 @@ testArray.forEach(function (element) {
 });
 
 console.log(result);
+*/
