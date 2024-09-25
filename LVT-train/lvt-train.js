@@ -335,3 +335,36 @@ testArray.forEach(function (element) {
 
 console.log(result);
 */
+const sentence = "The quick brown fox jumps over the lazy dog";
+let reversed = sentence.split("").reverse().join("");
+console.log(reversed);
+//
+const recommendedMovies1 = [
+  "Inception",
+  "The Matrix",
+  "Interstellar",
+  "Memento",
+];
+const recommendedMovies2 = ["The Matrix", "Avatar", "Inception", "Titanic"];
+const movieTitles = recommendedMovies1.concat(recommendedMovies2);
+console.log(movieTitles);
+let unicArray = [];
+for (let i = 0; i < movieTitles.length; i++) {
+  if (unicArray.indexOf(movieTitles[i]) === -1) {
+    unicArray.push(movieTitles[i]);
+  }
+}
+console.log(unicArray);
+//
+const inventory = ["mouse", "keyboard", "monitor", "laptop", "printer"];
+const searchTerm = "shayan";
+
+if (inventory.indexOf(searchTerm) === -1) {
+  inventory.push(searchTerm);
+} else {
+  console.log("message");
+}
+const secondInventory = inventory.slice(0, 3).concat(inventory.slice(-2));
+const result = secondInventory.join(";");
+console.log(result);
+//
