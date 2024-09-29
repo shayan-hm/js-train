@@ -334,7 +334,7 @@ testArray.forEach(function (element) {
 });
 
 console.log(result);
-*/
+
 const sentence = "The quick brown fox jumps over the lazy dog";
 let reversed = sentence.split("").reverse().join("");
 console.log(reversed);
@@ -368,3 +368,150 @@ const secondInventory = inventory.slice(0, 3).concat(inventory.slice(-2));
 const result = secondInventory.join(";");
 console.log(result);
 //
+
+const makeCapital = function (str) {
+  return str[0].toUpperCase().concat(str.slice(1).toLowerCase());
+};
+console.log(makeCapital("stRing"));
+console.log("gr".repeat(10));
+
+const ages = [12, 5, 6, 23, -8];
+ages.forEach(function (value, index) {
+  ages[index] = value * 2;
+});
+console.log(ages);
+
+const users = "cena shayan negin shiva maryam narges ali saeed hossein";
+const result = users.split(" ").filter((value) => {
+  return value.length >= 5;
+});
+console.log(result);
+
+function sumNumbers(...numbers) {
+  let result = 0;
+  numbers.forEach((value) => {
+    result += value;
+  });
+  console.log(result);
+}
+sumNumbers(1, 6, 8, 1, 7, 165);
+
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+const [players1, players2] = game.players;
+const [gk, ...fieldPlayers] = players1;
+const allPlayers = [...players1, ...players2];
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+const { team1: team1, x: draw, team2: team2 } = game.odds;
+const printGoals = function (...input) {
+  console.log(input.length);
+};
+
+//
+let input = [
+  "adel",
+  "LION",
+  "undEfind",
+  63,
+  "Hala madRid",
+  "JENkINs",
+  "DOCKER",
+];
+//expected output ["ADEL", "lion", "UNDEFIND", "HALA MADRID","JENKINS","docker"];
+
+const result = [];
+input.forEach((value) => {
+  if (typeof value === "string" && value == value.toUpperCase()) {
+    result.push(value.toLowerCase());
+  } else if (typeof value === "string") {
+    result.push(value.toUpperCase());
+  }
+});
+console.log(result);
+
+
+const numbers = [3, 4, 6, 1];
+
+const maxValue = numbers.reduce((accumulator, currentValue) => {
+  return Math.max(accumulator, currentValue);
+}, numbers[0]);
+
+console.log(maxValue);
+////
+const numbers = [3, 4, 6, 1];
+
+const maxValue = numbers.reduce((accumulator, current) => {
+  if (current > accumulator) {
+    return current;
+  } else {
+    return accumulator;
+  }
+}, numbers[0]);
+
+console.log(maxValue);
+
+const number = [
+  0, 3, 2, 9, 4, 15, 6, 21, 8, 27, 10, 33, 12, 39, 14, 45, 16, 51, 18, 57, 20,
+  63, 22, 69, 24, 75, 26, 81, 28, 87, 30, 93, 32, 99, 34, 105, 36, 111, 38, 117,
+  40, 123, 42, 129, 44, 135, 46, 141, 48, 147,
+];
+console.log(
+  number.sort((a, b) => {
+    if (a < b) {
+      return -1;
+    } else {
+      return 1;
+    }
+  })
+);
+
+//
+const string = "abcde";
+function accum(s) {
+  let result = [];
+  let open = s.split("");
+  open.forEach((value, index) => {
+    result.push(value.toUpperCase() + value.toLowerCase().repeat(index));
+  });
+  return result.join("-");
+}
+console.log(accum(string));
+*/
