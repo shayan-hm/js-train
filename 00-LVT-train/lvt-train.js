@@ -515,3 +515,11 @@ function accum(s) {
 }
 console.log(accum(string));
 */
+
+document.querySelector("#btn").addEventListener("click", function () {
+  document.querySelector("#head").textContent =
+    2024 - Number(document.querySelector("#ipt").value);
+  document.querySelector("body").style.backgroundColor = "green";
+  document.querySelector("#head").style.color = "white";
+  document.querySelector("#head").style.fontSize = "2rem";
+});
